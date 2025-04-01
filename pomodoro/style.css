@@ -1,0 +1,145 @@
+body {
+  font-family: "Arial", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.timer-container {
+  background-color: white;
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #d95550; /* Pomodoro red */
+}
+
+.modes {
+  margin-bottom: 20px;
+}
+
+.mode-btn {
+  padding: 8px 15px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #eee;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.mode-btn.active {
+  background-color: #d95550;
+  color: white;
+  border-color: #d95550;
+}
+
+.mode-btn:not(.active):hover {
+  background-color: #ddd;
+}
+
+#timer-display {
+  font-size: 5em; /* Larger timer display */
+  margin-bottom: 25px;
+  font-weight: bold;
+  color: #333;
+}
+
+.controls button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  transition: background-color 0.3s, transform 0.1s;
+}
+
+#start-btn {
+  background-color: #4caf50; /* Green */
+}
+#pause-btn {
+  background-color: #ff9800; /* Orange */
+}
+#reset-btn {
+  background-color: #2196f3; /* Blue */
+}
+#stop-btn {
+  background-color: #f44336; /* Red */
+}
+
+.controls button:hover {
+  opacity: 0.9;
+}
+.controls button:active {
+  transform: scale(0.98);
+}
+
+.settings {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.settings h2 {
+  margin-bottom: 15px;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.setting-item {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.setting-item label {
+  margin-right: 10px;
+  width: 90px; /* Align labels */
+  text-align: right;
+}
+
+.setting-item input[type="number"] {
+  width: 60px;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Hide number input arrows for cleaner look (optional) */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+#apply-settings-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #607d8b; /* Blue Grey */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#apply-settings-btn:hover {
+  background-color: #546e7a;
+}
