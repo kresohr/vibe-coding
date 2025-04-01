@@ -1,0 +1,17 @@
+{
+  "name": "pomodoro",
+  "version": "1.0.0",
+  "description": "pomodoro timer created with AI vibe coding",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pomodoro",
+    "vibe",
+    "coding",
+    "js"
+  ],
+  "author": "kresimir ilicic",
+  "license": "ISC"
+}
