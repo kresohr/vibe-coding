@@ -1,0 +1,18 @@
+/* CSS remains the same as the previous version */
+body{margin:0;overflow:hidden;font-family:sans-serif;background-color:#f0f0f0}
+#container{width:100vw;height:100vh;display:block}
+#info{position:absolute;top:10px;left:10px;background-color:rgba(0,0,0,.8);color:#fff;padding:15px;border-radius:5px;z-index:100;max-height:90vh;overflow-y:auto;max-width:300px}
+#info p,#info ul{margin:5px 0;font-size:.9em}
+#info ul{padding-left:20px}
+#info hr{border:none;border-top:1px solid #555;margin:10px 0}
+#fileInput{margin-top:5px;margin-bottom:10px;display:block}
+#objectList{list-style:none;padding:0;margin-top:5px}
+#objectList li{padding:5px 8px;cursor:pointer;border-radius:3px;margin-bottom:4px;background-color:rgba(255,255,255,.1);transition:background-color .2s ease;display:flex;justify-content:space-between;align-items:center;gap:5px}
+#objectList li:hover{background-color:rgba(255,255,255,.2)}
+#objectList li.selected{background-color:#4a88ff;color:#fff;font-weight:700}
+.object-name{flex-grow:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-right:5px}
+.object-dims{font-size:.8em;color:#ccc;white-space:nowrap;flex-shrink:0}
+.edit-dims-btn{background:0 0;border:none;color:#a0dfff;cursor:pointer;padding:0 3px;font-size:1.1em;line-height:1;flex-shrink:0}
+.edit-dims-btn:hover{color:#fff}
+#loadingSpinner{position:fixed;left:50%;top:50%;z-index:1001;width:50px;height:50px;margin:-25px 0 0 -25px;border:6px solid #f3f3f3;border-radius:50%;border-top:6px solid #3498db;animation:spin 1s linear infinite;display:none}
+@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
